@@ -1,0 +1,19 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/regis-resources/integrations
+- https://n8n.io/integrations/regis-resources/
+- https://composio.dev/toolkits/regis-resources
+- https://monid.ai/tools/regis-resources
+checked:
+- https://www.regisresources.com.au/
+- https://composio.dev/toolkits/regis-resources
+- https://monid.ai/tools/regis-resources
+- https://n8n.io/integrations/regis-resources/
+- https://zapier.com/apps/regis-resources/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: Regis Resources is a gold producer with no API product; its homepage links no integrations, partners-app,
+  or marketplace pages, and it holds no contract in the catalog.

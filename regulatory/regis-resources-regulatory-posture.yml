@@ -1,0 +1,64 @@
+generated: '2026-10-22'
+method: searched
+probe: true
+source: https://www.regisresources.com.au/wp-content/uploads/2025/09/Privacy-Policy-Final-July-2022.pdf
+scope_note: >-
+  Regis Resources is an ASX-listed Australian gold miner with no developer API. Its only published legal pages are the
+  website Legal Disclaimer (https://www.regisresources.com.au/legal-disclaimer/, 200) and the July 2022 Privacy Policy PDF
+  linked from it. /privacy-policy/ returned 404. The pages say nothing about subprocessor lists, data retention periods,
+  incident notification, AI, accessibility or the other catalog signals, so those are not recorded.
+signals:
+  data_subject_request:
+    url: https://www.regisresources.com.au/wp-content/uploads/2025/09/Privacy-Policy-Final-July-2022.pdf
+    section: Accessing or correcting your personal information
+    channel: enquiries@regisresources.com
+    rights_named: [access, correction]
+    escalation: Office of the Australian Information Commissioner
+    evidence:
+    - source: https://www.regisresources.com.au/wp-content/uploads/2025/09/Privacy-Policy-Final-July-2022.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Subject to any exceptions in the Privacy Act, an individual has the right to access and request
+        correction to their personal information held by Regis. Requests for access the personal information
+        should be sent via email to enquiries@regisresources.com.
+    - source: https://www.regisresources.com.au/wp-content/uploads/2025/09/Privacy-Policy-Final-July-2022.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Sometimes, we may not be able to provide you with access to all of your personal information and,
+        where this is the case, we will tell you why. We may also need to verify your identity when you
+        request your personal information.
+    note: >-
+      Access and correction rights under the Australian Privacy Act, with an email channel and identity verification.
+      No deletion or portability right and no response time are stated. Unresolved complaints can go to the OAIC.
+  data_residency:
+    url: https://www.regisresources.com.au/wp-content/uploads/2025/09/Privacy-Policy-Final-July-2022.pdf
+    section: Disclosure of Personal Information outside Australia
+    evidence:
+    - source: https://www.regisresources.com.au/wp-content/uploads/2025/09/Privacy-Policy-Final-July-2022.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Regis’ gold mining operations are all Australian based and therefore personal information will largely
+        be stored within Australia. However, we may disclose personal information to organisations or
+        persons outside of Australia. For example, through third party service providers and data storage
+        entities located overseas.
+    note: >-
+      Personal information is stored mostly in Australia, but it is not guaranteed to stay there. Overseas disclosure
+      to service providers and storage entities is allowed, with only "reasonable steps" toward consistency with the
+      Australian Privacy Principles. No countries are named.
+  subprocessors:
+    url: https://www.regisresources.com.au/wp-content/uploads/2025/09/Privacy-Policy-Final-July-2022.pdf
+    section: Disclosure of Personal Information
+    published_list: false
+    evidence:
+    - source: https://www.regisresources.com.au/wp-content/uploads/2025/09/Privacy-Policy-Final-July-2022.pdf
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Regis engages a third-party share registry service provider to manage its share registry and store
+        shareholder information.
+    note: >-
+      Only categories of recipients are given (a share registry provider, recruitment and labour-hire providers,
+      third-party suppliers and contractors). No named subprocessor list is published.

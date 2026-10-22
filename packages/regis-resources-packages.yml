@@ -1,0 +1,11 @@
+name: Regis Resources packages
+generated: '2026-10-22'
+method: none
+note: Regis Resources is an ASX-listed gold miner with no public developer API. No first-party client library found; npm (registry.npmjs.org/regis-resources 404, search "regisresources" 0 results), PyPI (pypi.org/pypi/regis-resources/json 404) and GitHub (org regisresources 404) checked. The homepage links no SDK, API or developer resources.
+checked:
+- https://registry.npmjs.org/regis-resources
+- https://registry.npmjs.org/-/v1/search?text=regisresources
+- https://pypi.org/pypi/regis-resources/json
+- https://api.github.com/orgs/regisresources
+- https://www.regisresources.com.au/
+packages: []

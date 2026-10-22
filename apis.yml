@@ -1,23 +1,86 @@
 aid: regis-resources
+
 name: Regis Resources
-description: 'Regis Resources is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Regis Resources (ASX: RRL) is an unhedged Australian gold producer with operations at Duketon and Tropicana
+  (a joint venture) in Western Australia and the McPhillamys gold project in New South Wales. Its website covers its assets,
+  resources and reserves, sustainability, careers and investor information including ASX announcements. The company publishes
+  no public developer API, documentation or developer portal on its own site; it was surfaced via the australia-apidays-2026
+  harvest.'
+
 url: https://raw.githubusercontent.com/api-evangelist/regis-resources/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Gold Mining
+- Mining
+- Australia
+- ASX Listed
+- Resources
+- Sustainability
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.regisresources.com.au/wp-content/uploads/2025/10/cropped-Regis-Favicon-270x270.png
+
 common:
+- type: Hosts
+  url: hosts/regis-resources-hosts.yml
+- type: DomainSecurity
+  url: security/regis-resources-domain-security.yml
 - type: Website
-  url: https://regisresources.com.au/
+  url: https://www.regisresources.com.au/
+- type: Support
+  url: https://www.regisresources.com.au/contact-us/
+- type: PrivacyPolicy
+  url: https://www.regisresources.com.au/legal-disclaimer/
+- type: Blog
+  url: https://www.regisresources.com.au/investors/asx-announcements/
+- type: RSSFeed
+  url: https://www.regisresources.com.au/feed/
+- type: Investors
+  url: https://www.regisresources.com.au/investors/
+- type: Careers
+  url: https://www.regisresources.com.au/careers/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website verified as Regis Resources (title "Regis Resources | ASX-Listed Australian Gold Producer"); regisresources.com.au
+    redirects to www on the same domain. No developer/API pages linked from the site.
+  evidence:
+  - url: https://regisresources.com.au/
+    status: 200
+  - url: https://www.regisresources.com.au/
+    status: 200
+  - url: https://www.regisresources.com.au/legal-disclaimer/
+    status: 200
+  - url: https://www.regisresources.com.au/contact-us/
+    status: 200
+  - url: https://www.regisresources.com.au/privacy-policy/
+    status: 404
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic
